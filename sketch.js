@@ -3,16 +3,16 @@ var speed,weight;
 
 
 function setup() {
-  createCanvas(1600,800);
+  createCanvas(1600,600);
 
-  speed=Math.round(random(55,85));
+  speed=Math.round(random(55,95));
   weight =Math.round(random(400,1500));
 
-  car = createSprite(50, 400, 50, 50);
+  car = createSprite(50, 300, 50, 50);
   car.velocityX = speed;
   //car.shapeColor=("grey");
 
-  wall = createSprite(1500,400,60,500);
+  wall = createSprite(1500,300,60,350);
   wall.shapeColor=color(80,80,80);
  
 }
